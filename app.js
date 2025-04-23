@@ -12,9 +12,10 @@ const authRoutes = require('./routes/authRoutes'); // Import the auth routes
 const app = express();
 const port = process.env.PORT || 4000;
 
-const allowedOrigins = process.env.NODE_ENV === 'production' 
-  ? [process.env.LIVE_FRONTEND_URL, 'https://your-frontend-domain.com'] 
+const allowedOrigins = process.env.NODE_ENV === 'production'
+  ? [process.env.LIVE_FRONTEND_URL, 'https://e54-final-assignment-ecomm-site-frontend.onrender.com']
   : ['http://localhost:3000'];
+
 
 // Connect DB
 connectDB();
